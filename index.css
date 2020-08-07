@@ -1,0 +1,202 @@
+body{
+  margin:0;
+  padding:0;
+  font-size: 62.5%;
+   }
+.header{
+  /*头部盒子布局*/
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: #5FC0CD;
+  
+}
+.header-center{
+  /*按钮居中*/
+  position: relative;
+  height: 6rem;
+  margin: auto;
+  flex: 1;
+}
+.header-button{
+  /*头部按钮统一的样式*/
+  
+  margin: auto;
+  border: none;
+  width: 8rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+.li-left{
+  /*头部按钮左边样式*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2rem 0 0 -5.5rem;
+  z-index:0;
+  border-radius: .5rem;
+  background-color: #55A8B3;
+  color: white;
+}
+.li-right{
+  /*头部按钮右边样式*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2rem 0 0 1.5rem;
+  border-radius: .5rem;
+  z-index:1;
+  background-color: white;
+  color: #5FC0CD;
+}
+
+.background-img{
+  /*引用雪碧图*/
+  background: url(img/css_sprites.png) no-repeat center ;
+
+}
+.header-img{
+   /*头部图标右对齐*/
+  margin-right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  color: white;
+}
+
+.option{
+  /*列表头布局*/
+  position: fixed;
+  display: flex;
+  top: 6rem;
+  width: 100%;
+  height: 4rem;
+  
+}
+.option select{
+  /*列表的内容居中*/
+  border: 1px solid #E1E5E7;
+  text-align:center;
+  text-align-last:center;
+  /*清除select聚焦时候的边框颜色*/
+  outline: none;
+  /*将select的宽高等于div的宽高*/
+  appearance:none; 
+  width: 33.3%;
+  height: 4rem;
+  line-height: 4rem;
+  color: #B7B7B7;
+  background-color: white;
+  font-size: 1.5rem;
+  }
+.wrapper{
+  /*主体内容布局*/
+  display: grid;
+  grid-template-rows: repeat(26, 3.5rem);
+  margin-top: 10rem;
+  margin-left: 1rem;
+  margin-bottom: 8rem;
+}
+.item-left{
+  /*左边样式*/
+  display: flex;
+  align-items: center;
+}
+.item-1{
+  /*第1行样式*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: .5rem;
+  font-size: 1.5rem;
+ 
+}
+.item-2{
+  /*第2行样式*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 2rem;
+  font-size: 1.8rem;
+}
+.item-right{
+  /*第2行右边样式*/
+  margin-left: auto;
+  font-size: 1.8rem;
+  color: red;
+
+}
+.item-bottom{
+  border-bottom: 1px solid #e5e4e9;
+}
+.item-3{
+  /*第3行样式*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: .5rem;
+  font-size: 1.5rem;
+}
+
+.item-img{
+  /*应用的雪碧图大小*/
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.arrow{
+  /*右侧小箭头样式*/
+  z-index: -1;
+  margin-right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-top: 0.15em solid #5fc0cd;
+  border-right: 0.15em solid #5fc0cd;
+  transform: rotate(45deg);
+}
+.footer{
+  /*尾部盒子布局*/
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0rem;
+  height: 6rem;
+  width: 100%;
+  background-color: white;
+}
+
+.footer-button{
+  /*尾部按钮样式*/
+  margin: auto;
+  padding-right: 1rem;
+  width: 5rem;
+  height: 6rem;
+  border: none;
+}
+.footer-button2{
+  /*尾部第2个按钮样式*/
+  margin: auto;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #5FC0CD;
+}
+.footer-text{
+  /*尾部文字样式*/
+  margin-top: 3rem;
+  margin-bottom: 0;
+  color: #5FC0CD;
+  font-size: 1.4rem;
+}
+.footer-text1{
+   /*尾部文字样式*/
+  margin-top: 3rem;
+  margin-bottom: 0;
+  color: #B7B7B7;
+  font-size: 1.4rem;
+}
